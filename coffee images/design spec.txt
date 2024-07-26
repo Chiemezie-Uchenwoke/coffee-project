@@ -1,0 +1,15 @@
+
+
+DESIGN SPECIFICATIONS.
+
+FONT-FAMILY - Poppins
+
+Primary Color - #914C26
+
+Secondary color - #B95C28
+
+Accent color - #B95C28/10
+
+Slate - #E8E8E8
+
+

@@ -1,0 +1,97 @@
+/* ====== Generic Styles ====== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====== Color variables ====== */
+:root {
+  --pri-clr: #914c26;
+  --sec-clr: #B95C28;
+  --acc-clr: #B95C2830;
+  --slate: #E8E8E8;
+}
+
+.container{
+  width: 100%;
+  background-color: var(--acc-clr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3rem 0;
+}
+
+h2{
+  color: var(--pri-clr);
+}
+
+.wrapper{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  height: 75vh;
+}
+
+.coffee-img{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.coffee-img img{
+  height: 100%;
+}
+
+.coffee-txt{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 3.25rem;
+}
+
+.first{
+  text-align: right;
+}
+
+.coffee-txt h4{
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  color: var(--sec-clr);
+}
+
+/* .first h4{
+  justify-content: flex-end;
+} */
+
+.coffee-txt input{
+  transform: scale(1.2);
+  cursor: pointer;
+  accent-color: var(--sec-clr);
+}
+
+.second h4{
+  flex-direction: row-reverse;
+}
+
+.container button{
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: var(--sec-clr);
+  color: #e8e8e8;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.container button:hover{
+  background-color: var(--pri-clr);
+}

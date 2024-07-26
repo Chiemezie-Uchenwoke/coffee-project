@@ -1,0 +1,350 @@
+/* ======= universal Style ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* ======== Generic style ======== */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-block: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-block: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/*======== Parent Container ======== */
+
+.parent {
+  font-size: 2rem;
+  color: white;
+  width: 90vw;
+  margin: 1rem auto;
+  margin-bottom: 5rem;
+  border: 2px solid grey;
+  padding-block: 1rem;
+}
+
+
+/* ========= Children Container ========= */
+
+.parent > div {
+  width: 150px;
+  height: 100px;
+  /* flex-basis: auto;
+  flex-shrink: 0; */
+ 
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.blueviolet {
+  background-color: blueviolet;
+}
+
+.gold {
+  background-color: goldenrod;
+}
+
+.chocolate {
+  background-color: chocolate;
+}
+
+.cyan {
+  background-color: darkcyan;
+}
+
+.magenta {
+  background-color: darkmagenta;
+}
+
+.olive {
+  background-color: darkolivegreen;
+}
+
+.grey {
+  background-color: grey;
+} 
+
+/* ======== Flexbox Styles ======== */
+
+.nowrap{
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+  flex-wrap: nowrap;
+}
+
+.wrap{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wrapreverse{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap-reverse;
+}
+
+.colwrap{
+  display: flex;
+  gap: 1rem;
+  height: 50vh;
+  /* flex-direction: column;
+  flex-wrap: wrap; */ 
+  flex-flow: column wrap; /*The flex Flow Property is the shorthand property for flex direction and flex wrap*/
+}
+
+.rowstart{
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.rowend{
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.colend{
+  display: flex;
+  gap: 1rem;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.rowcenter{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.rowbtw{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.roward{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.colard{
+  display: flex;
+  gap: 1rem;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.roweven{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.rowstart-align{
+  display: flex;
+  gap: 1rem;
+  height: 90vh;
+  align-items: flex-start; /*This is the default behaviour for the align items*/
+}
+
+.colend-align{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rowctr-align{
+  display: flex;
+  gap: 1rem;
+  height: 90vh;
+  align-items: center;
+}
+
+.colstr-align{
+  display: flex;
+  gap: 1rem;
+  /* flex-direction: column; */
+  height: 90vh;
+  align-items: stretch;
+}
+
+.rowbsl-align{
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.two{
+  font-size: 2.5rem;
+}
+
+.three{
+  font-size: 3rem;
+}
+
+.four{
+  font-size: 5rem;
+}
+
+.rowstart-align-cnt{
+  display: flex;
+  gap: 1rem;
+  height: 90vh;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.rowspcbtw-align-cnt{
+  display: flex;
+  gap: 1rem;
+  height: 90vh;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rowspcevn-align-cnt{
+  display: flex;
+  gap: 1rem;
+  height: 90vh;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.algself{
+  display: flex;
+  gap: 1rem;
+  height: 90vh;
+  align-items: flex-end;
+}
+
+.item3{
+  align-self: center;
+}
+
+.item5{
+  align-self: flex-start;
+}
+
+.algself2{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item8{
+  align-self: flex-end;
+}
+
+.item7{
+  align-self: center;
+}
+
+.item6{
+  align-self: self-end;
+}
+
+.ordflx{
+  display: flex;
+  gap: 1rem;
+}
+
+.order1{
+  order: 4;
+}
+
+.order2{
+  order: 2;
+}
+
+.order4{
+  order: 1;
+}
+
+.order5{
+  order: 3;
+}
+
+.flxgrow{
+  display: flex;
+  gap: 1rem;
+}
+
+.grow1{
+  flex-grow: 1;
+}
+
+.grow2{
+  flex-grow: 2;
+}
+
+.flxshrink{
+  display: flex;
+  gap: 1rem;
+}
+
+.flxshrink > div{
+  width: 500px;
+}
+
+.flxshrink:first-child{
+  flex-shrink: 2;
+}
+
+.flxshrink:last-child{
+  flex-shrink: 4;
+}
+
+.shrink1{
+  flex-shrink: 1;
+}
+
+.shrink2{
+  flex-shrink: 2;
+}
+
+.shrink3{
+  flex-shrink: 4;
+}
+
+.flxbasis{
+  display: flex;
+  gap: 1rem;
+}
+
+.basis2{
+  flex-basis: 400px;
+}

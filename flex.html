@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox: Flex wrap and alignment</title>
+
+  <!-- External css link -->
+   <link rel="stylesheet" href="./flex-styles.css">
+</head>
+<body>
+
+  <h1>CSS FLEXBOX</h1>
+
+  <h2>1. Flex Wrap</h2>
+  <!--The flex wrap property values are;
+  (1) No-Wrap
+  (2) Wrap
+  (3) Wrap Reverse-->
+
+  <h3>a. No-Wrap</h3>
+  <div class="parent nowrap">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+    
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+  </div>
+
+  <h3>b. Wrap</h3>
+  <div class="parent wrap">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+  </div>
+
+  <h3>c. Wrap Reverse</h3>
+  <div class="parent wrapreverse">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+  </div>
+
+  <h2>2. Flex Flow</h2>
+
+  <h3>a. Column Wrap</h3>
+  <div class="parent colwrap">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+    
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+  </div>
+
+  <h2>3. Alignment - Justify Content</h2>
+  <!--The values for justify content are:
+  (1) Flex Start
+  (2) Flex End
+  (3) Center
+  (4) Space Between
+  (5) Space Around
+  (6) Space Evenly-->
+
+  <h3>a. Row Flex-Start</h3>
+  <div class="parent rowstart">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>b. Row Flex-end</h3>
+  <div class="parent rowend">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>c. Column Flex-end</h3>
+  <div class="parent colend">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>d. Row Center</h3>
+  <div class="parent rowcenter">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>e. Row Space-between</h3>
+  <div class="parent rowbtw">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>f. Row Space-around</h3>
+  <div class="parent roward">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>g. Column Space-around</h3>
+  <div class="parent colard">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>h. Row Space-evenly</h3>
+  <div class="parent roweven">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h2>4. Alignment - (Cross Axis)</h2>
+  <!--The properties for alignment on the cross axis are:
+  (1) Align Items
+  (2) Align Content
+  (3) Align Self-->
+
+  <h2>4 (a). Alignment - Align Items</h2>
+  <!--The values for align items are:
+  (1) Flex Start
+  (2) Flex End
+  (3) Center
+  (4) Stretch
+  (5) Baseline-->
+
+  <h3>a. Row Flex-Start</h3>
+  <div class="parent rowstart-align">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>b. Column Flex-end</h3>
+  <div class="parent colend-align">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>c. Row Center</h3>
+  <div class="parent rowctr-align">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+  </div>
+
+  <h3>d. Column Stretch</h3>
+  <div class="parent colstr-align">
+    <div class="red">ONE</div>
+    <div class="blue">TWO</div>
+    <div class="green">THREE</div>
+    <div class="blueviolet">FOUR</div>
+    <div class="gold">FIVE</div>
+  </div>
+
+  <h3>e. Row Baseline</h3>
+  <div class="parent rowbsl-align">
+    <div class="red one">ONE</div>
+    <div class="blue two">TWO</div>
+    <div class="green three">THREE</div>
+    <div class="blueviolet four">FOUR</div>
+    <div class="gold five">FIVE</div>
+  </div>
+
+  <h2>4 (b). Alignment - Align Content</h2>
+  <!--The values for align content are:
+  (1) Flex Start
+  (2) Flex End
+  (3) Center
+  (4) Stretch
+  (5) Space Between
+  (6) Space Around
+  (7) Space Evenly-->
+
+  <h3>a. Row Flex-Start</h3>
+  <div class="parent rowstart-align-cnt">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+  </div>
+
+  <h3>b. Row Space-Between</h3>
+  <div class="parent rowspcbtw-align-cnt">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+  </div>
+
+
+  <h3>c. Row Space-Evenly</h3>
+  <div class="parent rowspcevn-align-cnt">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="blueviolet"></div>
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+
+    <div class="gold"></div>
+    <div class="chocolate"></div>
+    <div class="cyan"></div>
+    <div class="magenta"></div>
+    <div class="olive"></div>
+    <div class="grey"></div>
+  </div>
+
+
+  <h2>4 (c). Alignment - Align Self</h2>
+  <!--The values for align self are:
+  (1) Flex Start
+  (2) Flex End
+  (3) Center
+  (4) Stretch
+  (5) Baseline-->
+
+  <h3>a. Row Flex-Start - Align Self of End</h3>
+  <div class="parent algself">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green item3"></div>
+    <div class="blueviolet"></div>
+    <div class="gold item5"></div>
+  </div>
+
+  <h3>b. Column Flex-Start - Align Self of End</h3>
+  <div class="parent algself2">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green item6"></div>
+    <div class="blueviolet item7"></div>
+    <div class="gold item8"></div>
+  </div>
+
+
+  <h2>5. Order</h2>
+
+  <h3>a. Row Flex-Start - Align Self of End</h3>
+  <div class="parent ordflx">
+    <div class="red order1"></div>
+    <div class="blue order2"></div>
+    <div class="green order3"></div>
+    <div class="blueviolet order4"></div>
+    <div class="gold order5"></div>
+  </div>
+
+  <h2>6. Flex Grow</h2>
+
+  <div class="parent flxgrow">
+    <div class="red grow1">ONE</div>
+    <div class="blue grow2">TWO</div>
+    <div class="green grow3">THREE</div>
+  </div>
+
+  <h2>7. Flex Shrink</h2>
+
+  <div class="parent flxshrink">
+    <div class="red shrink1">ONE</div>
+    <div class="blue shrink2">TWO</div>
+    <div class="green shrink3">THREE</div>
+  </div>
+
+  <h2>8. Flex Basis</h2>
+
+  <div class="parent flxbasis">
+    <div class="red basis1">ONE</div>
+    <div class="blue basis2">TWO</div>
+    <div class="green basis3">THREE</div>
+  </div>
+
+</body>
+</html>

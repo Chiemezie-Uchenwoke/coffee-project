@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.parent{
+    max-width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    gap: 5rem;
+}
+
+/* This targets the image which is the second div-child of the parent */
+.parent > div:nth-child(2) > img{
+    max-width: 70%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* This targets the first child of the parent */
+.parent > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45vw;
+}
+
+/* To make the image stay centered compared to the first div child */
+.parent > div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+
+/* This sets the gap between each item in the first child */
+.first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    font-size: 1.31rem;
+}
+
+/* This is for styling the h2 element */
+.first-child > h2{
+    color: #0171ff;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* This makes the icon and the text in the second child stay side by side */
+.second-child > div{
+    display: flex;
+    gap: 0.7rem;
+}
+
+/* This makes the second child a flex and creates a gap between each of the three div elements */
+.second-child{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3.8rem; 
+    font-size: 1.25rem;
+}
+
+/* This creates space between lines of text */
+.parent p{
+    line-height: 1.7rem;
+}
